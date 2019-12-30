@@ -26,17 +26,17 @@ def forward():
 
 def turnLeft():
 	print("Going Left")
-	GPIO.output(Motor1A,GPIO.HIGH)
-	GPIO.output(Motor1B,GPIO.LOW)
-	GPIO.output(Motor2A,GPIO.LOW)
-	GPIO.output(Motor2B,GPIO.HIGH)
-
-def turnRight():
-	print("Going Right")
 	GPIO.output(Motor1A,GPIO.LOW)
 	GPIO.output(Motor1B,GPIO.HIGH)
 	GPIO.output(Motor2A,GPIO.HIGH)
 	GPIO.output(Motor2B,GPIO.LOW)
+
+def turnRight():
+	print("Going Right")
+	GPIO.output(Motor1A,GPIO.HIGH)
+	GPIO.output(Motor1B,GPIO.LOW)
+	GPIO.output(Motor2A,GPIO.LOW)
+	GPIO.output(Motor2B,GPIO.HIGH)
 
 def stop():
 	print("Stopping")
